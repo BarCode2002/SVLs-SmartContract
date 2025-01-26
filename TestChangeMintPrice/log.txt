@@ -1,0 +1,23 @@
+Creating contract KT1TezoooozzSmartPyzzSTATiCzzzwwBFA1
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {}))))))))
+file TestChangeMintPrice/step_001_cont_0_storage.tz
+file TestChangeMintPrice/step_001_cont_0_storage.json
+file TestChangeMintPrice/step_001_cont_0_storage.py
+file TestChangeMintPrice/step_001_cont_0_types.py
+file TestChangeMintPrice/step_001_cont_0_contract.tz contract SmartContract
+file TestChangeMintPrice/step_001_cont_0_contract.json contract SmartContract
+file TestChangeMintPrice/step_002_cont_0_params.py
+file TestChangeMintPrice/step_002_cont_0_params.tz
+file TestChangeMintPrice/step_002_cont_0_params.json
+Executing changeMintPrice(sp.tez(2))...
+Expected error: 'Must be admin'
+file TestChangeMintPrice/step_003_cont_0_params.py
+file TestChangeMintPrice/step_003_cont_0_params.tz
+file TestChangeMintPrice/step_003_cont_0_params.json
+Executing changeMintPrice(sp.tez(10))...
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {}))))))))
+file TestChangeMintPrice/step_004_cont_0_params.py
+file TestChangeMintPrice/step_004_cont_0_params.tz
+file TestChangeMintPrice/step_004_cont_0_params.json
+Executing changeMintPrice(sp.tez(20))...
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 20000000 (Pair 1000000 (Pair 50 {}))))))))

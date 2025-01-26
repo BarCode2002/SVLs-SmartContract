@@ -1,0 +1,1 @@
+sp.record(VIN = 'LJCPRNFN54390342', brand = 'Porsche', climate = 'Mediterranean', color = 'Green', curr_owner_info = ['a', 'c'], engine = '1.2 l', fuel = 'Gasoline', horsepower = '564', kilometers = '12445534', model = '911', shift = 'Manual', svl_key = 'no key', use = 'Daily', vehicleSpecificType = 'Convertible', weight = '4324', year = '1970')

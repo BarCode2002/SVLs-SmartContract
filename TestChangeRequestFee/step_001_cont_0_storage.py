@@ -1,0 +1,1 @@
+sp.record(admin1 = sp.address('tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP'), admin2 = sp.address('tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT'), admin3 = sp.address('tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU'), admin4 = sp.address('tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx'), minTransferPrice = sp.tez(10), mintPrice = sp.tez(10), requestFee = sp.tez(1), split = 50, svls = {})
