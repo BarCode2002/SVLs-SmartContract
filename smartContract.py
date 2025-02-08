@@ -151,16 +151,6 @@ def main():
       sp.cast(params.brand, sp.string)
       sp.cast(params.model, sp.string)
       sp.cast(params.year, sp.string)
-      sp.cast(params.vehicleSpecificType, sp.string)
-      sp.cast(params.kilometers, sp.string)
-      sp.cast(params.horsepower, sp.string)
-      sp.cast(params.engine, sp.string)
-      sp.cast(params.weight, sp.string)
-      sp.cast(params.shift, sp.string)
-      sp.cast(params.fuel, sp.string)
-      sp.cast(params.color, sp.string)
-      sp.cast(params.use, sp.string)
-      sp.cast(params.climate, sp.string)
       svl = self.data.svls[params.svl_key]
       assert svl.owner == sp.sender, "Must be SVL owner"
       assert len(params.curr_owner_info) < 100, "Owner limit reached"
@@ -169,16 +159,6 @@ def main():
         svl.brand = params.brand
         svl.model = params.model
         svl.year = params.year
-      svl.vehicleSpecificType = params.vehicleSpecificType
-      svl.kilometers = params.kilometers
-      svl.horsepower = params.horsepower
-      svl.engine = params.engine
-      svl.weight = params.weight
-      svl.shift = params.shift
-      svl.fuel = params.fuel
-      svl.color = params.color
-      svl.use = params.use
-      svl.climate = params.climate
       if not svl.first_owner:
         totalCids = len(params.curr_owner_info)
         for prev_owner_info in svl.prev_owners_info:
@@ -196,16 +176,6 @@ def main():
       sp.cast(params.brand, sp.string)
       sp.cast(params.model, sp.string)
       sp.cast(params.year, sp.string)
-      sp.cast(params.vehicleSpecificType, sp.string)
-      sp.cast(params.kilometers, sp.string)
-      sp.cast(params.horsepower, sp.string)
-      sp.cast(params.engine, sp.string)
-      sp.cast(params.weight, sp.string)
-      sp.cast(params.shift, sp.string)
-      sp.cast(params.fuel, sp.string)
-      sp.cast(params.color, sp.string)
-      sp.cast(params.use, sp.string)
-      sp.cast(params.climate, sp.string)
       value_option = self.data.svls.get_opt(params.svl_key)
       assert value_option.is_none(), "Must be a new entry"
       assert sp.amount == self.data.mintPrice, "Not enough tez"
@@ -228,16 +198,6 @@ def main():
                                                 brand = params.brand,
                                                 model = params.model,
                                                 year = params.year,
-                                                vehicleSpecificType = params.vehicleSpecificType,
-                                                kilometers = params.kilometers,
-                                                horsepower = params.horsepower,
-                                                engine = params.engine,
-                                                weight = params.weight,
-                                                shift = params.shift,
-                                                fuel = params.fuel,
-                                                color = params.color,
-                                                use = params.use,
-                                                climate = params.climate
                                               )
 
 @sp.add_test()
@@ -390,17 +350,7 @@ def mint():
     brand = 'Porsche',
     model = '911',
     year = '1970',
-    vehicleSpecificType = 'Convertible',
-    kilometers = '12445534',
-    horsepower = '564',
-    engine = '1.2 l',
-    weight = '4324',
-    shift = 'Manual',
-    fuel = 'Gasoline',
-    color = 'Green',
-    use = 'Daily',
-    climate = 'Mediterranean',
-    price = sp.tez(10),
+    svl_price = sp.tez(10),
     curr_owner_info = ['a', 'b']
   )
   contract.mint(params, _sender = pepe, _amount = sp.tez(10))
@@ -411,17 +361,7 @@ def mint():
     brand = 'Pepino',
     model = '911',
     year = '1970',
-    vehicleSpecificType = 'Convertible',
-    kilometers = '12445534',
-    horsepower = '564',
-    engine = '1.2 l',
-    weight = '4324',
-    shift = 'Manual',
-    fuel = 'Gasoline',
-    color = 'Green',
-    use = 'Daily',
-    climate = 'Mediterranean',
-    price = sp.tez(10),
+    svl_price = sp.tez(10),
     curr_owner_info = ['a', 'b']
   )
   contract.mint(params, _sender = pepe, _amount = sp.tez(10), _valid = False)
@@ -432,17 +372,7 @@ def mint():
     brand = 'Porsche',
     model = '911',
     year = '1970',
-    vehicleSpecificType = 'Convertible',
-    kilometers = '12445534',
-    horsepower = '564',
-    engine = '1.2 l',
-    weight = '4324',
-    shift = 'Manual',
-    fuel = 'Gasoline',
-    color = 'Green',
-    use = 'Daily',
-    climate = 'Mediterranean',
-    price = sp.tez(10),
+    svl_price = sp.tez(10),
     curr_owner_info = ['a', 'b']
   )
   contract.mint(params, _sender = pepe, _amount = sp.tez(8), _valid = False)
@@ -453,17 +383,7 @@ def mint():
     brand = 'Porsche',
     model = '911',
     year = '1970',
-    vehicleSpecificType = 'Convertible',
-    kilometers = '12445534',
-    horsepower = '564',
-    engine = '1.2 l',
-    weight = '4324',
-    shift = 'Manual',
-    fuel = 'Gasoline',
-    color = 'Green',
-    use = 'Daily',
-    climate = 'Mediterranean',
-    price = sp.tez(10),
+    svl_price = sp.tez(10),
     curr_owner_info = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',  '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39',  '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58',  '59', '60', '61', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77',  '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96',  '97', '98', '99']
   )
   contract.mint(params, _sender = pepe, _amount = sp.tez(10), _valid = False)
@@ -474,17 +394,7 @@ def mint():
     brand = 'Porsche',
     model = '911',
     year = '1970',
-    vehicleSpecificType = 'Convertible',
-    kilometers = '12445534',
-    horsepower = '564',
-    engine = '1.2 l',
-    weight = '4324',
-    shift = 'Manual',
-    fuel = 'Gasoline',
-    color = 'Green',
-    use = 'Daily',
-    climate = 'Mediterranean',
-    price = sp.tez(10),
+    svl_price = sp.tez(10),
     curr_owner_info = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',  '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39',  '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58',  '59', '60', '61', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77',  '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96',  '97', '98', '99']
   )
   contract.mint(params, _sender = pepe, _amount = sp.tez(10))
@@ -515,17 +425,7 @@ def changeTransferPrice():
     brand = 'Porsche',
     model = '911',
     year = '1970',
-    vehicleSpecificType = 'Convertible',
-    kilometers = '12445534',
-    horsepower = '564',
-    engine = '1.2 l',
-    weight = '4324',
-    shift = 'Manual',
-    fuel = 'Gasoline',
-    color = 'Green',
-    use = 'Daily',
-    climate = 'Mediterranean',
-    price = sp.tez(10),
+    svl_price = sp.tez(10),
     curr_owner_info = ['a', 'b']
   )
   contract.mint(params, _sender = pepe, _amount = sp.tez(10))  
@@ -574,17 +474,7 @@ def update():
     brand = 'Porsche',
     model = '911',
     year = '1970',
-    vehicleSpecificType = 'Convertible',
-    kilometers = '12445534',
-    horsepower = '564',
-    engine = '1.2 l',
-    weight = '4324',
-    shift = 'Manual',
-    fuel = 'Gasoline',
-    color = 'Green',
-    use = 'Daily',
-    climate = 'Mediterranean',
-    price = sp.tez(10),
+    svl_price = sp.tez(10),
     curr_owner_info = ['a', 'b']
   )
   contract.mint(params, _sender = pepe, _amount = sp.tez(10))
@@ -595,16 +485,6 @@ def update():
     brand = 'Porsche',
     model = '911',
     year = '1970',
-    vehicleSpecificType = 'Convertible',
-    kilometers = '12445534',
-    horsepower = '564',
-    engine = '1.2 l',
-    weight = '4324',
-    shift = 'Manual',
-    fuel = 'Gasoline',
-    color = 'Green',
-    use = 'Daily',
-    climate = 'Mediterranean',
     curr_owner_info = ['a', 'c']
   )
   contract.update(params, _sender = pepe)
@@ -615,16 +495,6 @@ def update():
     brand = 'Porsche',
     model = '911',
     year = '1970',
-    vehicleSpecificType = 'Convertible',
-    kilometers = '12445534',
-    horsepower = '564',
-    engine = '1.2 l',
-    weight = '4324',
-    shift = 'Manual',
-    fuel = 'Gasoline',
-    color = 'Green',
-    use = 'Daily',
-    climate = 'Mediterranean',
     curr_owner_info = ['a', 'c']
   )
   contract.update(params, _sender = pepa, _valid = False)
@@ -635,16 +505,6 @@ def update():
     brand = 'Porsche',
     model = '911',
     year = '1970',
-    vehicleSpecificType = 'Convertible',
-    kilometers = '12445534',
-    horsepower = '564',
-    engine = '1.2 l',
-    weight = '4324',
-    shift = 'Manual',
-    fuel = 'Gasoline',
-    color = 'Green',
-    use = 'Daily',
-    climate = 'Mediterranean',
     curr_owner_info = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',  '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39',  '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58',  '59', '60', '61', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77',  '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96',  '97', '98', '99']
   )
   contract.update(params, _sender = pepe, _valid = False)
@@ -655,16 +515,6 @@ def update():
     brand = 'Porsche',
     model = '911',
     year = '1970',
-    vehicleSpecificType = 'Convertible',
-    kilometers = '12445534',
-    horsepower = '564',
-    engine = '1.2 l',
-    weight = '4324',
-    shift = 'Manual',
-    fuel = 'Gasoline',
-    color = 'Green',
-    use = 'Daily',
-    climate = 'Mediterranean',
     curr_owner_info = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',  '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39',  '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58',  '59', '60', '61', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77',  '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96',  '97', '98', '99']
   )
   contract.update(params, _sender = pepe)
@@ -675,16 +525,6 @@ def update():
     brand = 'Porsche',
     model = '911',
     year = '1970',
-    vehicleSpecificType = 'Convertible',
-    kilometers = '12445534',
-    horsepower = '564',
-    engine = '1.2 l',
-    weight = '4324',
-    shift = 'Manual',
-    fuel = 'Gasoline',
-    color = 'Green',
-    use = 'Daily',
-    climate = 'Mediterranean',
     curr_owner_info = ['a', 'c']
   )
   contract.update(params, _sender = pepe, _valid = False)
@@ -716,17 +556,7 @@ def requestClearTransfer():
     brand = 'Porsche',
     model = '911',
     year = '1970',
-    vehicleSpecificType = 'Convertible',
-    kilometers = '12445534',
-    horsepower = '564',
-    engine = '1.2 l',
-    weight = '4324',
-    shift = 'Manual',
-    fuel = 'Gasoline',
-    color = 'Green',
-    use = 'Daily',
-    climate = 'Mediterranean',
-    price = sp.tez(10),
+    svl_price = sp.tez(10),
     curr_owner_info = ['a', 'b']
   )
   contract.mint(params, _sender = pepe, _amount = sp.tez(10))
@@ -785,17 +615,7 @@ def transferSVL():
     brand = 'Porsche',
     model = '911',
     year = '1970',
-    vehicleSpecificType = 'Convertible',
-    kilometers = '12445534',
-    horsepower = '564',
-    engine = '1.2 l',
-    weight = '4324',
-    shift = 'Manual',
-    fuel = 'Gasoline',
-    color = 'Green',
-    use = 'Daily',
-    climate = 'Mediterranean',
-    price = sp.tez(10),
+    svl_price = sp.tez(10),
     curr_owner_info = ['a', 'b']
   )
   contract.mint(params, _sender=pepe, _amount = sp.tez(10))
@@ -824,16 +644,6 @@ def transferSVL():
     brand = 'Porsche',
     model = '911',
     year = '1970',
-    vehicleSpecificType = 'Convertible',
-    kilometers = '12445534',
-    horsepower = '564',
-    engine = '1.2 l',
-    weight = '4324',
-    shift = 'Manual',
-    fuel = 'Gasoline',
-    color = 'Green',
-    use = 'Daily',
-    climate = 'Mediterranean',
     curr_owner_info = ['a', 'd']
   )
   contract.update(params, _sender = pepe, _valid = False)
@@ -844,16 +654,6 @@ def transferSVL():
     brand = 'Pizza',
     model = '911',
     year = '1970',
-    vehicleSpecificType = 'Convertible',
-    kilometers = '12445534',
-    horsepower = '564',
-    engine = '1.2 l',
-    weight = '4324',
-    shift = 'Manual',
-    fuel = 'Gasoline',
-    color = 'Green',
-    use = 'Daily',
-    climate = 'Mediterranean',
     curr_owner_info = ['mono']
   )
   contract.update(params, _sender = pepa)
@@ -874,16 +674,6 @@ def transferSVL():
     brand = 'Porsche',
     model = '911',
     year = '1970',
-    vehicleSpecificType = 'Convertible',
-    kilometers = '12445534',
-    horsepower = '564',
-    engine = '1.2 l',
-    weight = '4324',
-    shift = 'Manual',
-    fuel = 'Gasoline',
-    color = 'Green',
-    use = 'Daily',
-    climate = 'Mediterranean',
     curr_owner_info = ['a', 'd']
   )
   contract.update(params, _sender = pepa, _valid = False)
@@ -894,16 +684,6 @@ def transferSVL():
     brand = 'Pepino',
     model = '911',
     year = '1970',
-    vehicleSpecificType = 'Convertible',
-    kilometers = '12445534',
-    horsepower = '564',
-    engine = '1.2 l',
-    weight = '4324',
-    shift = 'Manual',
-    fuel = 'Gasoline',
-    color = 'Green',
-    use = 'Daily',
-    climate = 'Mediterranean',
     curr_owner_info = ['l', 'cafetera']
   )
   contract.update(params, _sender = pepi)
@@ -914,16 +694,6 @@ def transferSVL():
     brand = 'Porsche',
     model = '911',
     year = '1970',
-    vehicleSpecificType = 'Convertible',
-    kilometers = '12445534',
-    horsepower = '564',
-    engine = '1.2 l',
-    weight = '4324',
-    shift = 'Manual',
-    fuel = 'Gasoline',
-    color = 'Green',
-    use = 'Daily',
-    climate = 'Mediterranean',
     curr_owner_info = ['3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',  '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39',  '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58',  '59', '60', '61', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77',  '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96',  '97', '98', '99']
   )
   contract.update(params, _sender = pepi, _valid = False)
