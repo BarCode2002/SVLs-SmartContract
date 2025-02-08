@@ -170,7 +170,7 @@ def main():
     @sp.entrypoint
     def mint(self, params):
       sp.cast(params.curr_owner_info, sp.list[sp.string])
-      sp.cast(params.price, sp.mutez)
+      sp.cast(params.svl_price, sp.mutez)
       sp.cast(params.svl_key, sp.string)
       sp.cast(params.VIN, sp.string)
       sp.cast(params.brand, sp.string)
@@ -187,7 +187,7 @@ def main():
         sp.send(self.data.admin3, share)
         sp.send(self.data.admin4, share)
       self.data.svls[params.svl_key] = sp.record(
-                                                price = params.price,
+                                                price = params.svl_price,
                                                 prev_owners_info = [(sp.sender, [''])],
                                                 curr_owner_info = params.curr_owner_info,
                                                 request = sp.sender,

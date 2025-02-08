@@ -9,71 +9,8 @@
         {
           "prim": "Pair",
           "args": [
-            { "string": "Mediterranean" },
-            {
-              "prim": "Pair",
-              "args": [
-                { "string": "Green" },
-                {
-                  "prim": "Pair",
-                  "args": [
-                    [ { "string": "a" }, { "string": "c" } ],
-                    {
-                      "prim": "Pair",
-                      "args": [
-                        { "string": "1.2 l" },
-                        {
-                          "prim": "Pair",
-                          "args": [
-                            { "string": "Gasoline" },
-                            {
-                              "prim": "Pair",
-                              "args": [
-                                { "string": "564" },
-                                {
-                                  "prim": "Pair",
-                                  "args": [
-                                    { "string": "12445534" },
-                                    {
-                                      "prim": "Pair",
-                                      "args": [
-                                        { "string": "911" },
-                                        {
-                                          "prim": "Pair",
-                                          "args": [
-                                            { "string": "Manual" },
-                                            {
-                                              "prim": "Pair",
-                                              "args": [
-                                                { "string": "no key" },
-                                                {
-                                                  "prim": "Pair",
-                                                  "args": [
-                                                    { "string": "Daily" },
-                                                    {
-                                                      "prim": "Pair",
-                                                      "args": [ { "string": "Convertible" }, { "prim": "Pair", "args": [ { "string": "4324" }, { "string": "1970" } ] } ]
-                                                    }
-                                                  ]
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
+            [ { "string": "a" }, { "string": "c" } ],
+            { "prim": "Pair", "args": [ { "string": "911" }, { "prim": "Pair", "args": [ { "string": "no key" }, { "string": "1970" } ] } ] }
           ]
         }
       ]
