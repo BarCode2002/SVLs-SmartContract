@@ -10,7 +10,7 @@ file TestChangeRequestFee/step_002_cont_0_params.py
 file TestChangeRequestFee/step_002_cont_0_params.tz
 file TestChangeRequestFee/step_002_cont_0_params.json
 Executing changeRequestFee(sp.tez(2))...
-Expected error: 'Must be admin'
+Expected error: '0'
 file TestChangeRequestFee/step_003_cont_0_params.py
 file TestChangeRequestFee/step_003_cont_0_params.tz
 file TestChangeRequestFee/step_003_cont_0_params.json

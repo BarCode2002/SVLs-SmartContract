@@ -1,1 +1,1 @@
-sp.record(VIN = 'AJFJJFJFE492300', brand = 'Porsche', curr_owner_info = ['a', 'c'], model = '911', svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX', year = '1970')
+sp.record(VIN = 'AJFJJFJFE492300', curr_owner_info = ['a', 'c'], svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')

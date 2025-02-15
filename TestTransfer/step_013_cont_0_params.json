@@ -1,22 +1,4 @@
 {
   "prim": "Pair",
-  "args": [
-    { "string": "LJCPRNFN54390342" },
-    {
-      "prim": "Pair",
-      "args": [
-        { "string": "Pizza" },
-        {
-          "prim": "Pair",
-          "args": [
-            [ { "string": "mono" } ],
-            {
-              "prim": "Pair",
-              "args": [ { "string": "911" }, { "prim": "Pair", "args": [ { "string": "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" }, { "string": "1970" } ] } ]
-            }
-          ]
-        }
-      ]
-    }
-  ]
+  "args": [ { "string": "LJCPRNFN54390342" }, { "prim": "Pair", "args": [ [ { "string": "mono" } ], { "string": "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" } ] } ]
 }

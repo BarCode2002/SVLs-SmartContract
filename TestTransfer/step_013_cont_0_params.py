@@ -1,1 +1,1 @@
-sp.record(VIN = 'LJCPRNFN54390342', brand = 'Pizza', curr_owner_info = ['mono'], model = '911', svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX', year = '1970')
+sp.record(VIN = 'LJCPRNFN54390342', curr_owner_info = ['mono'], svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')

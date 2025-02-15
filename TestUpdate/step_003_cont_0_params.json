@@ -1,22 +1,6 @@
 {
   "prim": "Pair",
   "args": [
-    { "string": "PEPEPEPPEEE" },
-    {
-      "prim": "Pair",
-      "args": [
-        { "string": "Porsche" },
-        {
-          "prim": "Pair",
-          "args": [
-            [ { "string": "a" }, { "string": "c" } ],
-            {
-              "prim": "Pair",
-              "args": [ { "string": "911" }, { "prim": "Pair", "args": [ { "string": "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" }, { "string": "1970" } ] } ]
-            }
-          ]
-        }
-      ]
-    }
+    { "string": "PEPEPEPPEEE" }, { "prim": "Pair", "args": [ [ { "string": "a" }, { "string": "c" } ], { "string": "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" } ] }
   ]
 }

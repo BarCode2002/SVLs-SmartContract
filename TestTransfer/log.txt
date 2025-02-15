@@ -9,8 +9,8 @@ file TestTransfer/step_001_cont_0_contract.json contract SmartContract
 file TestTransfer/step_002_cont_0_params.py
 file TestTransfer/step_002_cont_0_params.tz
 file TestTransfer/step_002_cont_0_params.json
-Executing mint(sp.record(VIN = 'LJCPRNFN54390342', brand = 'Porsche', curr_owner_info = ['a', 'b'], model = '911', svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX', svl_price = sp.tez(10), year = '1970'))...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair False (Pair "Porsche" (Pair {"a"; "b"} (Pair True (Pair "911" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" (Pair {Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {""}} (Pair 10000000 (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" "1970"))))))))))}))))))))
+Executing mint(sp.record(VIN = 'LJCPRNFN54390342', curr_owner_info = ['a', 'b'], svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX'))...
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair False (Pair {"a"; "b"} (Pair True (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {""})} (Pair 10000000 "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28")))))))}))))))))
   + Transfer
      params: ()
      amount: sp.mutez(2500000)
@@ -31,17 +31,17 @@ file TestTransfer/step_003_cont_0_params.py
 file TestTransfer/step_003_cont_0_params.tz
 file TestTransfer/step_003_cont_0_params.json
 Executing transfer('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
-Expected error: 'Cannot transfer to myself'
+Expected error: '8'
 file TestTransfer/step_004_cont_0_params.py
 file TestTransfer/step_004_cont_0_params.tz
 file TestTransfer/step_004_cont_0_params.json
 Executing transfer('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
-Expected error: 'Must be requester'
+Expected error: '4'
 file TestTransfer/step_005_cont_0_params.py
 file TestTransfer/step_005_cont_0_params.tz
 file TestTransfer/step_005_cont_0_params.json
 Executing requestTransfer('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair False (Pair "Porsche" (Pair {"a"; "b"} (Pair True (Pair "911" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" (Pair {Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {""}} (Pair 10000000 (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" "1970"))))))))))}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair False (Pair {"a"; "b"} (Pair True (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {""})} (Pair 10000000 "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX")))))))}))))))))
   + Transfer
      params: ()
      amount: sp.mutez(250000)
@@ -62,32 +62,32 @@ file TestTransfer/step_006_cont_0_params.py
 file TestTransfer/step_006_cont_0_params.tz
 file TestTransfer/step_006_cont_0_params.json
 Executing transfer('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
-Expected error: 'Request not accepted'
+Expected error: '9'
 file TestTransfer/step_007_cont_0_params.py
 file TestTransfer/step_007_cont_0_params.tz
 file TestTransfer/step_007_cont_0_params.json
 Executing ownerAcceptTransferRequest('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair True (Pair "Porsche" (Pair {"a"; "b"} (Pair True (Pair "911" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" (Pair {Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {""}} (Pair 10000000 (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" "1970"))))))))))}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair True (Pair {"a"; "b"} (Pair True (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {""})} (Pair 10000000 "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX")))))))}))))))))
 file TestTransfer/step_008_cont_0_params.py
 file TestTransfer/step_008_cont_0_params.tz
 file TestTransfer/step_008_cont_0_params.json
 Executing transfer('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
-Expected error: 'Must be requester'
+Expected error: '4'
 file TestTransfer/step_009_cont_0_params.py
 file TestTransfer/step_009_cont_0_params.tz
 file TestTransfer/step_009_cont_0_params.json
 Executing transfer('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
-Expected error: 'Not enough tez'
+Expected error: '1'
 file TestTransfer/step_010_cont_0_params.py
 file TestTransfer/step_010_cont_0_params.tz
 file TestTransfer/step_010_cont_0_params.json
 Executing transfer('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
-Expected error: 'Not enough tez'
+Expected error: '1'
 file TestTransfer/step_011_cont_0_params.py
 file TestTransfer/step_011_cont_0_params.tz
 file TestTransfer/step_011_cont_0_params.json
 Executing transfer('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair False (Pair "Porsche" (Pair {""} (Pair False (Pair "911" (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" (Pair {Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"}} (Pair 10000000 (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" "1970"))))))))))}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair False (Pair {""} (Pair False (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX")))))))}))))))))
   + Transfer
      params: ()
      amount: sp.tez(5)
@@ -111,18 +111,18 @@ Executing transfer('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')..
 file TestTransfer/step_012_cont_0_params.py
 file TestTransfer/step_012_cont_0_params.tz
 file TestTransfer/step_012_cont_0_params.json
-Executing update(sp.record(VIN = 'LJCPRNFN54390342', brand = 'Porsche', curr_owner_info = ['a', 'd'], model = '911', svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX', year = '1970'))...
-Expected error: 'Must be SVL owner'
+Executing update(sp.record(VIN = 'LJCPRNFN54390342', curr_owner_info = ['a', 'd'], svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX'))...
+Expected error: '3'
 file TestTransfer/step_013_cont_0_params.py
 file TestTransfer/step_013_cont_0_params.tz
 file TestTransfer/step_013_cont_0_params.json
-Executing update(sp.record(VIN = 'LJCPRNFN54390342', brand = 'Pizza', curr_owner_info = ['mono'], model = '911', svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX', year = '1970'))...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair False (Pair "Porsche" (Pair {"mono"} (Pair False (Pair "911" (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" (Pair {Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"}} (Pair 10000000 (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" "1970"))))))))))}))))))))
+Executing update(sp.record(VIN = 'LJCPRNFN54390342', curr_owner_info = ['mono'], svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX'))...
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair False (Pair {"mono"} (Pair False (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX")))))))}))))))))
 file TestTransfer/step_014_cont_0_params.py
 file TestTransfer/step_014_cont_0_params.tz
 file TestTransfer/step_014_cont_0_params.json
 Executing requestTransfer('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair False (Pair "Porsche" (Pair {"mono"} (Pair False (Pair "911" (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" (Pair {Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"}} (Pair 10000000 (Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" "1970"))))))))))}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair False (Pair {"mono"} (Pair False (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ")))))))}))))))))
   + Transfer
      params: ()
      amount: sp.mutez(250000)
@@ -143,22 +143,22 @@ file TestTransfer/step_015_cont_0_params.py
 file TestTransfer/step_015_cont_0_params.tz
 file TestTransfer/step_015_cont_0_params.json
 Executing ownerAcceptTransferRequest('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
-Expected error: 'Must be SVL owner'
+Expected error: '3'
 file TestTransfer/step_016_cont_0_params.py
 file TestTransfer/step_016_cont_0_params.tz
 file TestTransfer/step_016_cont_0_params.json
 Executing ownerAcceptTransferRequest('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair True (Pair "Porsche" (Pair {"mono"} (Pair False (Pair "911" (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" (Pair {Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"}} (Pair 10000000 (Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" "1970"))))))))))}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair True (Pair {"mono"} (Pair False (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ")))))))}))))))))
 file TestTransfer/step_017_cont_0_params.py
 file TestTransfer/step_017_cont_0_params.tz
 file TestTransfer/step_017_cont_0_params.json
 Executing transfer('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
-Expected error: 'Must be requester'
+Expected error: '4'
 file TestTransfer/step_018_cont_0_params.py
 file TestTransfer/step_018_cont_0_params.tz
 file TestTransfer/step_018_cont_0_params.json
 Executing transfer('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair False (Pair "Porsche" (Pair {""} (Pair False (Pair "911" (Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" (Pair {Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" {"mono"}; Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"}} (Pair 10000000 (Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" "1970"))))))))))}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair False (Pair {""} (Pair False (Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" {"mono"}); Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ")))))))}))))))))
   + Transfer
      params: ()
      amount: sp.tez(5)
@@ -182,23 +182,23 @@ Executing transfer('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')..
 file TestTransfer/step_019_cont_0_params.py
 file TestTransfer/step_019_cont_0_params.tz
 file TestTransfer/step_019_cont_0_params.json
-Executing update(sp.record(VIN = 'JAJAJAJJAJAJAJ', brand = 'Porsche', curr_owner_info = ['a', 'd'], model = '911', svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX', year = '1970'))...
-Expected error: 'Must be SVL owner'
+Executing update(sp.record(VIN = 'JAJAJAJJAJAJAJ', curr_owner_info = ['a', 'd'], svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX'))...
+Expected error: '3'
 file TestTransfer/step_020_cont_0_params.py
 file TestTransfer/step_020_cont_0_params.tz
 file TestTransfer/step_020_cont_0_params.json
-Executing update(sp.record(VIN = 'JAJAJAJJAJAJAJJ', brand = 'Pepino', curr_owner_info = ['l', 'cafetera'], model = '911', svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX', year = '1970'))...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair False (Pair "Porsche" (Pair {"l"; "cafetera"} (Pair False (Pair "911" (Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" (Pair {Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" {"mono"}; Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"}} (Pair 10000000 (Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" "1970"))))))))))}))))))))
+Executing update(sp.record(VIN = 'JAJAJAJJAJAJAJJ', curr_owner_info = ['l', 'cafetera'], svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX'))...
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair False (Pair {"l"; "cafetera"} (Pair False (Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" {"mono"}); Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ")))))))}))))))))
 file TestTransfer/step_021_cont_0_params.py
 file TestTransfer/step_021_cont_0_params.tz
 file TestTransfer/step_021_cont_0_params.json
-Executing update(sp.record(VIN = 'JAJAJAJJAJAJAJ', brand = 'Porsche', curr_owner_info = ['3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99'], model = '911', svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX', year = '1970'))...
-Expected error: 'Owner limit reached'
+Executing update(sp.record(VIN = 'JAJAJAJJAJAJAJ', curr_owner_info = ['3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99'], svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX'))...
+Expected error: '2'
 file TestTransfer/step_022_cont_0_params.py
 file TestTransfer/step_022_cont_0_params.tz
 file TestTransfer/step_022_cont_0_params.json
 Executing requestTransfer('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair False (Pair "Porsche" (Pair {"l"; "cafetera"} (Pair False (Pair "911" (Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" (Pair {Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" {"mono"}; Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"}} (Pair 10000000 (Pair "tz1WfRnupPXpNwmf7hp6EXU6sg2oH6D4gze8" "1970"))))))))))}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair False (Pair {"l"; "cafetera"} (Pair False (Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" {"mono"}); Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1WfRnupPXpNwmf7hp6EXU6sg2oH6D4gze8")))))))}))))))))
   + Transfer
      params: ()
      amount: sp.mutez(250000)
@@ -219,12 +219,12 @@ file TestTransfer/step_023_cont_0_params.py
 file TestTransfer/step_023_cont_0_params.tz
 file TestTransfer/step_023_cont_0_params.json
 Executing ownerAcceptTransferRequest('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair True (Pair "Porsche" (Pair {"l"; "cafetera"} (Pair False (Pair "911" (Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" (Pair {Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" {"mono"}; Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"}} (Pair 10000000 (Pair "tz1WfRnupPXpNwmf7hp6EXU6sg2oH6D4gze8" "1970"))))))))))}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair True (Pair {"l"; "cafetera"} (Pair False (Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" {"mono"}); Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1WfRnupPXpNwmf7hp6EXU6sg2oH6D4gze8")))))))}))))))))
 file TestTransfer/step_024_cont_0_params.py
 file TestTransfer/step_024_cont_0_params.tz
 file TestTransfer/step_024_cont_0_params.json
 Executing transfer('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair False (Pair "Porsche" (Pair {""} (Pair False (Pair "911" (Pair "tz1WfRnupPXpNwmf7hp6EXU6sg2oH6D4gze8" (Pair {Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" {"l"; "cafetera"}; Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" {"mono"}; Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"}} (Pair 10000000 (Pair "tz1WfRnupPXpNwmf7hp6EXU6sg2oH6D4gze8" "1970"))))))))))}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair "LJCPRNFN54390342" (Pair False (Pair {""} (Pair False (Pair "tz1WfRnupPXpNwmf7hp6EXU6sg2oH6D4gze8" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" {"l"; "cafetera"}); Pair "1970-01-01T00:00:00Z" (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" {"mono"}); Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1WfRnupPXpNwmf7hp6EXU6sg2oH6D4gze8")))))))}))))))))
   + Transfer
      params: ()
      amount: sp.tez(5)

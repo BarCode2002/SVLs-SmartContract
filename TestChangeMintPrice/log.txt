@@ -10,7 +10,7 @@ file TestChangeMintPrice/step_002_cont_0_params.py
 file TestChangeMintPrice/step_002_cont_0_params.tz
 file TestChangeMintPrice/step_002_cont_0_params.json
 Executing changeMintPrice(sp.tez(2))...
-Expected error: 'Must be admin'
+Expected error: '0'
 file TestChangeMintPrice/step_003_cont_0_params.py
 file TestChangeMintPrice/step_003_cont_0_params.tz
 file TestChangeMintPrice/step_003_cont_0_params.json
