@@ -10,7 +10,7 @@ file TestChangeSplit/step_002_cont_0_params.py
 file TestChangeSplit/step_002_cont_0_params.tz
 file TestChangeSplit/step_002_cont_0_params.json
 Executing changeSplit(10)...
-Expected error: 'Must be admin'
+Expected error: '0'
 file TestChangeSplit/step_003_cont_0_params.py
 file TestChangeSplit/step_003_cont_0_params.tz
 file TestChangeSplit/step_003_cont_0_params.json

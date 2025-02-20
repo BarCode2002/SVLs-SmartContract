@@ -10,17 +10,17 @@ file TestChangeAdmins/step_002_cont_0_params.py
 file TestChangeAdmins/step_002_cont_0_params.tz
 file TestChangeAdmins/step_002_cont_0_params.json
 Executing changeAdmin1(sp.address('tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28'))...
-Expected error: 'Must be admin'
+Expected error: '0'
 file TestChangeAdmins/step_003_cont_0_params.py
 file TestChangeAdmins/step_003_cont_0_params.tz
 file TestChangeAdmins/step_003_cont_0_params.json
 Executing changeAdmin1(sp.address('tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28'))...
-Expected error: 'Must be admin'
+Expected error: '0'
 file TestChangeAdmins/step_004_cont_0_params.py
 file TestChangeAdmins/step_004_cont_0_params.tz
 file TestChangeAdmins/step_004_cont_0_params.json
 Executing changeAdmin1(sp.address('tz1ZEZr6xyjSiQFyCA7y3fVdz6fckLT9gJdG'))...
-Expected error: 'Must be admin'
+Expected error: '0'
 file TestChangeAdmins/step_005_cont_0_params.py
 file TestChangeAdmins/step_005_cont_0_params.tz
 file TestChangeAdmins/step_005_cont_0_params.json

@@ -1,1 +1,1 @@
-sp.record(VIN = 'AJFJJFJFE492300', brand = 'Porsche', climate = 'Mediterranean', color = 'Green', curr_owner_info = ['a', 'c'], engine = '1.2 l', fuel = 'Gasoline', horsepower = '564', kilometers = '12445534', model = '911', shift = 'Manual', svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX', use = 'Daily', vehicleSpecificType = 'Convertible', weight = '4324', year = '1970')
+sp.record(VIN = 'AJFJJFJFE492300', curr_owner_info = ['a', 'c'], svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')

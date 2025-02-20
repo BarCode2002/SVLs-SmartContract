@@ -10,7 +10,7 @@ file TestChangeMinTransferPrice/step_002_cont_0_params.py
 file TestChangeMinTransferPrice/step_002_cont_0_params.tz
 file TestChangeMinTransferPrice/step_002_cont_0_params.json
 Executing changeMinTransferPrice(sp.tez(2))...
-Expected error: 'Must be admin'
+Expected error: '0'
 file TestChangeMinTransferPrice/step_003_cont_0_params.py
 file TestChangeMinTransferPrice/step_003_cont_0_params.tz
 file TestChangeMinTransferPrice/step_003_cont_0_params.json
