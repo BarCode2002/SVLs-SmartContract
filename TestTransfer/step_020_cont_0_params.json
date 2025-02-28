@@ -1,7 +1,1 @@
-{
-  "prim": "Pair",
-  "args": [
-    { "string": "JAJAJAJJAJAJAJJ" },
-    { "prim": "Pair", "args": [ [ { "string": "l" }, { "string": "cafetera" } ], { "string": "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" } ] }
-  ]
-}
+{ "prim": "Pair", "args": [ [ { "string": "l" }, { "string": "cafetera" } ], { "string": "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" } ] }

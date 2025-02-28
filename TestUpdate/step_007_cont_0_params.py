@@ -1,1 +1,1 @@
-sp.record(VIN = 'LJCPRNFN54390342', curr_owner_info = ['a', 'c'], svl_key = 'no key')
+sp.record(curr_owner_info = ['a', 'c'], svl_key = 'no key')
