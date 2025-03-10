@@ -1,5 +1,5 @@
 Creating contract KT1TezoooozzSmartPyzzSTATiCzzzwwBFA1
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {}))))))
 file TestChangeSplit/step_001_cont_0_storage.tz
 file TestChangeSplit/step_001_cont_0_storage.json
 file TestChangeSplit/step_001_cont_0_storage.py
@@ -15,4 +15,4 @@ file TestChangeSplit/step_003_cont_0_params.py
 file TestChangeSplit/step_003_cont_0_params.tz
 file TestChangeSplit/step_003_cont_0_params.json
 Executing changeSplit(10)...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 10 {}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 10 {}))))))

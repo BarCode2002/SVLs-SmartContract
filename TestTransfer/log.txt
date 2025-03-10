@@ -1,5 +1,5 @@
 Creating contract KT1TezoooozzSmartPyzzSTATiCzzzwwBFA1
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {}))))))
 file TestTransfer/step_001_cont_0_storage.tz
 file TestTransfer/step_001_cont_0_storage.json
 file TestTransfer/step_001_cont_0_storage.py
@@ -10,23 +10,15 @@ file TestTransfer/step_002_cont_0_params.py
 file TestTransfer/step_002_cont_0_params.tz
 file TestTransfer/step_002_cont_0_params.json
 Executing mint(sp.record(curr_owner_info = ['a', 'b'], svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX'))...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair False (Pair {"a"; "b"} (Pair True (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {""})} (Pair 10000000 "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28"))))))}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair False (Pair {"a"; "b"} (Pair True (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {""})} (Pair 10000000 "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28"))))))}))))))
   + Transfer
      params: ()
-     amount: sp.mutez(2500000)
+     amount: sp.tez(5)
      to:     sp.contract(sp.unit, sp.address('tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP')).open_some()
   + Transfer
      params: ()
-     amount: sp.mutez(2500000)
+     amount: sp.tez(5)
      to:     sp.contract(sp.unit, sp.address('tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT')).open_some()
-  + Transfer
-     params: ()
-     amount: sp.mutez(2500000)
-     to:     sp.contract(sp.unit, sp.address('tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU')).open_some()
-  + Transfer
-     params: ()
-     amount: sp.mutez(2500000)
-     to:     sp.contract(sp.unit, sp.address('tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx')).open_some()
 file TestTransfer/step_003_cont_0_params.py
 file TestTransfer/step_003_cont_0_params.tz
 file TestTransfer/step_003_cont_0_params.json
@@ -41,23 +33,15 @@ file TestTransfer/step_005_cont_0_params.py
 file TestTransfer/step_005_cont_0_params.tz
 file TestTransfer/step_005_cont_0_params.json
 Executing requestTransfer('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair False (Pair {"a"; "b"} (Pair True (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {""})} (Pair 10000000 "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX"))))))}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair False (Pair {"a"; "b"} (Pair True (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {""})} (Pair 10000000 "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX"))))))}))))))
   + Transfer
      params: ()
-     amount: sp.mutez(250000)
+     amount: sp.mutez(500000)
      to:     sp.contract(sp.unit, sp.address('tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP')).open_some()
   + Transfer
      params: ()
-     amount: sp.mutez(250000)
+     amount: sp.mutez(500000)
      to:     sp.contract(sp.unit, sp.address('tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT')).open_some()
-  + Transfer
-     params: ()
-     amount: sp.mutez(250000)
-     to:     sp.contract(sp.unit, sp.address('tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU')).open_some()
-  + Transfer
-     params: ()
-     amount: sp.mutez(250000)
-     to:     sp.contract(sp.unit, sp.address('tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx')).open_some()
 file TestTransfer/step_006_cont_0_params.py
 file TestTransfer/step_006_cont_0_params.tz
 file TestTransfer/step_006_cont_0_params.json
@@ -67,7 +51,7 @@ file TestTransfer/step_007_cont_0_params.py
 file TestTransfer/step_007_cont_0_params.tz
 file TestTransfer/step_007_cont_0_params.json
 Executing ownerAcceptTransferRequest('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair True (Pair {"a"; "b"} (Pair True (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {""})} (Pair 10000000 "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX"))))))}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair True (Pair {"a"; "b"} (Pair True (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {""})} (Pair 10000000 "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX"))))))}))))))
 file TestTransfer/step_008_cont_0_params.py
 file TestTransfer/step_008_cont_0_params.tz
 file TestTransfer/step_008_cont_0_params.json
@@ -87,27 +71,19 @@ file TestTransfer/step_011_cont_0_params.py
 file TestTransfer/step_011_cont_0_params.tz
 file TestTransfer/step_011_cont_0_params.json
 Executing transfer('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair False (Pair {""} (Pair False (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX"))))))}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair False (Pair {""} (Pair False (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX"))))))}))))))
   + Transfer
      params: ()
      amount: sp.tez(5)
      to:     sp.contract(sp.unit, sp.address('tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX')).open_some()
   + Transfer
      params: ()
-     amount: sp.mutez(1250000)
+     amount: sp.mutez(2500000)
      to:     sp.contract(sp.unit, sp.address('tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP')).open_some()
   + Transfer
      params: ()
-     amount: sp.mutez(1250000)
+     amount: sp.mutez(2500000)
      to:     sp.contract(sp.unit, sp.address('tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT')).open_some()
-  + Transfer
-     params: ()
-     amount: sp.mutez(1250000)
-     to:     sp.contract(sp.unit, sp.address('tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU')).open_some()
-  + Transfer
-     params: ()
-     amount: sp.mutez(1250000)
-     to:     sp.contract(sp.unit, sp.address('tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx')).open_some()
 file TestTransfer/step_012_cont_0_params.py
 file TestTransfer/step_012_cont_0_params.tz
 file TestTransfer/step_012_cont_0_params.json
@@ -117,28 +93,20 @@ file TestTransfer/step_013_cont_0_params.py
 file TestTransfer/step_013_cont_0_params.tz
 file TestTransfer/step_013_cont_0_params.json
 Executing update(sp.record(curr_owner_info = ['mono'], svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX'))...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair False (Pair {"mono"} (Pair False (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX"))))))}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair False (Pair {"mono"} (Pair False (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX"))))))}))))))
 file TestTransfer/step_014_cont_0_params.py
 file TestTransfer/step_014_cont_0_params.tz
 file TestTransfer/step_014_cont_0_params.json
 Executing requestTransfer('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair False (Pair {"mono"} (Pair False (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ"))))))}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair False (Pair {"mono"} (Pair False (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ"))))))}))))))
   + Transfer
      params: ()
-     amount: sp.mutez(250000)
+     amount: sp.mutez(500000)
      to:     sp.contract(sp.unit, sp.address('tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP')).open_some()
   + Transfer
      params: ()
-     amount: sp.mutez(250000)
+     amount: sp.mutez(500000)
      to:     sp.contract(sp.unit, sp.address('tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT')).open_some()
-  + Transfer
-     params: ()
-     amount: sp.mutez(250000)
-     to:     sp.contract(sp.unit, sp.address('tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU')).open_some()
-  + Transfer
-     params: ()
-     amount: sp.mutez(250000)
-     to:     sp.contract(sp.unit, sp.address('tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx')).open_some()
 file TestTransfer/step_015_cont_0_params.py
 file TestTransfer/step_015_cont_0_params.tz
 file TestTransfer/step_015_cont_0_params.json
@@ -148,7 +116,7 @@ file TestTransfer/step_016_cont_0_params.py
 file TestTransfer/step_016_cont_0_params.tz
 file TestTransfer/step_016_cont_0_params.json
 Executing ownerAcceptTransferRequest('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair True (Pair {"mono"} (Pair False (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ"))))))}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair True (Pair {"mono"} (Pair False (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ"))))))}))))))
 file TestTransfer/step_017_cont_0_params.py
 file TestTransfer/step_017_cont_0_params.tz
 file TestTransfer/step_017_cont_0_params.json
@@ -158,27 +126,19 @@ file TestTransfer/step_018_cont_0_params.py
 file TestTransfer/step_018_cont_0_params.tz
 file TestTransfer/step_018_cont_0_params.json
 Executing transfer('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair False (Pair {""} (Pair False (Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" {"mono"}); Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ"))))))}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair False (Pair {""} (Pair False (Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" {"mono"}); Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ"))))))}))))))
   + Transfer
      params: ()
      amount: sp.tez(5)
      to:     sp.contract(sp.unit, sp.address('tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ')).open_some()
   + Transfer
      params: ()
-     amount: sp.mutez(1250000)
+     amount: sp.mutez(2500000)
      to:     sp.contract(sp.unit, sp.address('tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP')).open_some()
   + Transfer
      params: ()
-     amount: sp.mutez(1250000)
+     amount: sp.mutez(2500000)
      to:     sp.contract(sp.unit, sp.address('tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT')).open_some()
-  + Transfer
-     params: ()
-     amount: sp.mutez(1250000)
-     to:     sp.contract(sp.unit, sp.address('tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU')).open_some()
-  + Transfer
-     params: ()
-     amount: sp.mutez(1250000)
-     to:     sp.contract(sp.unit, sp.address('tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx')).open_some()
 file TestTransfer/step_019_cont_0_params.py
 file TestTransfer/step_019_cont_0_params.tz
 file TestTransfer/step_019_cont_0_params.json
@@ -188,7 +148,7 @@ file TestTransfer/step_020_cont_0_params.py
 file TestTransfer/step_020_cont_0_params.tz
 file TestTransfer/step_020_cont_0_params.json
 Executing update(sp.record(curr_owner_info = ['l', 'cafetera'], svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX'))...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair False (Pair {"l"; "cafetera"} (Pair False (Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" {"mono"}); Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ"))))))}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair False (Pair {"l"; "cafetera"} (Pair False (Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" {"mono"}); Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ"))))))}))))))
 file TestTransfer/step_021_cont_0_params.py
 file TestTransfer/step_021_cont_0_params.tz
 file TestTransfer/step_021_cont_0_params.json
@@ -198,50 +158,34 @@ file TestTransfer/step_022_cont_0_params.py
 file TestTransfer/step_022_cont_0_params.tz
 file TestTransfer/step_022_cont_0_params.json
 Executing requestTransfer('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair False (Pair {"l"; "cafetera"} (Pair False (Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" {"mono"}); Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1WfRnupPXpNwmf7hp6EXU6sg2oH6D4gze8"))))))}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair False (Pair {"l"; "cafetera"} (Pair False (Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" {"mono"}); Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1WfRnupPXpNwmf7hp6EXU6sg2oH6D4gze8"))))))}))))))
   + Transfer
      params: ()
-     amount: sp.mutez(250000)
+     amount: sp.mutez(500000)
      to:     sp.contract(sp.unit, sp.address('tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP')).open_some()
   + Transfer
      params: ()
-     amount: sp.mutez(250000)
+     amount: sp.mutez(500000)
      to:     sp.contract(sp.unit, sp.address('tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT')).open_some()
-  + Transfer
-     params: ()
-     amount: sp.mutez(250000)
-     to:     sp.contract(sp.unit, sp.address('tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU')).open_some()
-  + Transfer
-     params: ()
-     amount: sp.mutez(250000)
-     to:     sp.contract(sp.unit, sp.address('tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx')).open_some()
 file TestTransfer/step_023_cont_0_params.py
 file TestTransfer/step_023_cont_0_params.tz
 file TestTransfer/step_023_cont_0_params.json
 Executing ownerAcceptTransferRequest('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair True (Pair {"l"; "cafetera"} (Pair False (Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" {"mono"}); Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1WfRnupPXpNwmf7hp6EXU6sg2oH6D4gze8"))))))}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair True (Pair {"l"; "cafetera"} (Pair False (Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" {"mono"}); Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1WfRnupPXpNwmf7hp6EXU6sg2oH6D4gze8"))))))}))))))
 file TestTransfer/step_024_cont_0_params.py
 file TestTransfer/step_024_cont_0_params.tz
 file TestTransfer/step_024_cont_0_params.json
 Executing transfer('2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')...
- -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair "tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU" (Pair "tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair False (Pair {""} (Pair False (Pair "tz1WfRnupPXpNwmf7hp6EXU6sg2oH6D4gze8" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" {"l"; "cafetera"}); Pair "1970-01-01T00:00:00Z" (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" {"mono"}); Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1WfRnupPXpNwmf7hp6EXU6sg2oH6D4gze8"))))))}))))))))
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair False (Pair {""} (Pair False (Pair "tz1WfRnupPXpNwmf7hp6EXU6sg2oH6D4gze8" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1ajHb2wF7vqwMJuqcHp9yFuZjgv8r3XmeQ" {"l"; "cafetera"}); Pair "1970-01-01T00:00:00Z" (Pair "tz1V2hvwkWKzrau7ATxvXCDhwhdUtmqJk4gX" {"mono"}); Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {"a"; "b"})} (Pair 10000000 "tz1WfRnupPXpNwmf7hp6EXU6sg2oH6D4gze8"))))))}))))))
   + Transfer
      params: ()
      amount: sp.tez(5)
      to:     sp.contract(sp.unit, sp.address('tz1WfRnupPXpNwmf7hp6EXU6sg2oH6D4gze8')).open_some()
   + Transfer
      params: ()
-     amount: sp.mutez(1250000)
+     amount: sp.mutez(2500000)
      to:     sp.contract(sp.unit, sp.address('tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP')).open_some()
   + Transfer
      params: ()
-     amount: sp.mutez(1250000)
+     amount: sp.mutez(2500000)
      to:     sp.contract(sp.unit, sp.address('tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT')).open_some()
-  + Transfer
-     params: ()
-     amount: sp.mutez(1250000)
-     to:     sp.contract(sp.unit, sp.address('tz1WXJEMVbVH7uBfvaMSoBNmRQfZQwYg7WQU')).open_some()
-  + Transfer
-     params: ()
-     amount: sp.mutez(1250000)
-     to:     sp.contract(sp.unit, sp.address('tz1cVkDqcn2tik1Pw9iN7n5zGQzZpjvphchx')).open_some()

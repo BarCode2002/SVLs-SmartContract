@@ -8,8 +8,6 @@ def main():
     def __init__(self, init_params):
       self.data.admin1 = sp.cast(init_params.admin1, sp.address)
       self.data.admin2 = sp.cast(init_params.admin2, sp.address)
-      self.data.admin3 = sp.cast(init_params.admin3, sp.address)
-      self.data.admin4 = sp.cast(init_params.admin4, sp.address)
       self.data.svls = sp.big_map({})
       self.data.mintPrice = sp.tez(10)
       self.data.requestFee = sp.tez(1)
@@ -29,38 +27,26 @@ def main():
       self.data.admin2 = newAdmin
 
     @sp.entrypoint
-    def changeAdmin3(self, newAdmin):
-      sp.cast(newAdmin, sp.address)
-      assert sp.sender == self.data.admin3, "0"
-      self.data.admin3 = newAdmin
-
-    @sp.entrypoint
-    def changeAdmin4(self, newAdmin):
-      sp.cast(newAdmin, sp.address)
-      assert sp.sender == self.data.admin4, "0"
-      self.data.admin4 = newAdmin
-
-    @sp.entrypoint
     def changeMintPrice(self, newMintPrice):
       sp.cast(newMintPrice, sp.mutez)
-      assert sp.sender == self.data.admin1 or sp.sender == self.data.admin2 or sp.sender == self.data.admin3 or sp.sender == self.data.admin4, "0"
+      assert sp.sender == self.data.admin1 or sp.sender == self.data.admin2, "0"
       self.data.mintPrice = newMintPrice
 
     @sp.entrypoint
     def changeSplit(self, newSplit):
-      assert sp.sender == self.data.admin1 or sp.sender == self.data.admin2 or sp.sender == self.data.admin3 or sp.sender == self.data.admin4, "0"
+      assert sp.sender == self.data.admin1 or sp.sender == self.data.admin2, "0"
       self.data.split = newSplit
 
     @sp.entrypoint
     def changeMinTransferPrice(self, newMinTransferPrice):
       sp.cast(newMinTransferPrice, sp.mutez)
-      assert sp.sender == self.data.admin1 or sp.sender == self.data.admin2 or sp.sender == self.data.admin3 or sp.sender == self.data.admin4, "0"
+      assert sp.sender == self.data.admin1 or sp.sender == self.data.admin2, "0"
       self.data.minTransferPrice = newMinTransferPrice
 
     @sp.entrypoint
     def changeRequestFee(self, newRequestFee):
       sp.cast(newRequestFee, sp.mutez)
-      assert sp.sender == self.data.admin1 or sp.sender == self.data.admin2 or sp.sender == self.data.admin3 or sp.sender == self.data.admin4, "0"
+      assert sp.sender == self.data.admin1 or sp.sender == self.data.admin2, "0"
       self.data.requestFee = newRequestFee
 
     @sp.entrypoint
@@ -71,11 +57,9 @@ def main():
       assert sp.sender != svl.owner, "5"
       assert svl.request == svl.owner, "6" 
       if self.data.requestFee != sp.mutez(0): 
-        share = sp.split_tokens(sp.amount, 25, 100)
+        share = sp.split_tokens(sp.amount, 50, 100)
         sp.send(self.data.admin1, share)
         sp.send(self.data.admin2, share)
-        sp.send(self.data.admin3, share)
-        sp.send(self.data.admin4, share)
       svl.request = sp.sender
       self.data.svls[svl_key] = svl
 
@@ -128,11 +112,9 @@ def main():
       if self.data.split != sp.nat(0): sp.send(sp.sender, seller_share)
       if self.data.split != sp.nat(100): 
           my_fee = sp.amount - seller_share
-          my_fee_share = sp.split_tokens(my_fee, 25, 100)
+          my_fee_share = sp.split_tokens(my_fee, 50, 100)
           sp.send(self.data.admin1, my_fee_share)
           sp.send(self.data.admin2, my_fee_share)
-          sp.send(self.data.admin3, my_fee_share)
-          sp.send(self.data.admin4, my_fee_share)
       if svl.first_owner:
         svl.prev_owners_info = [(sp.now, svl.owner, svl.curr_owner_info)]
         svl.first_owner = False
@@ -168,11 +150,9 @@ def main():
       assert sp.amount == self.data.mintPrice, "1"
       assert len(params.curr_owner_info) < 100, "2"
       if self.data.mintPrice != sp.mutez(0): 
-        share = sp.split_tokens(sp.amount, 25, 100)
+        share = sp.split_tokens(sp.amount, 50, 100)
         sp.send(self.data.admin1, share)
         sp.send(self.data.admin2, share)
-        sp.send(self.data.admin3, share)
-        sp.send(self.data.admin4, share)
       self.data.svls[params.svl_key] = sp.record(
                                                 price = self.data.minTransferPrice,
                                                 prev_owners_info = [(sp.now, sp.sender, [''])],
@@ -188,18 +168,14 @@ def changeAdmins():
 
   admin1 = sp.test_account("admin1").address
   admin2 = sp.test_account("admin2").address
-  admin3 = sp.test_account("admin3").address
-  admin4 = sp.test_account("admin4").address
-  new_admin1 = sp.test_account("new_admin").address
-  new_admin2 = sp.test_account("new_admin").address
+  new_admin1 = sp.test_account("new_admin1").address
+  new_admin2 = sp.test_account("new_admin2").address
   pepe = sp.test_account("pepe").address
   
   scenario = sp.test_scenario("TestChangeAdmins", main)
   init_params = sp.record(
     admin1 = admin1,
     admin2 = admin2,
-    admin3 = admin3,
-    admin4 = admin4
   )
   contract = main.SmartContract(init_params)
   scenario += contract
@@ -219,16 +195,12 @@ def changeMintPrice():
 
   admin1 = sp.test_account("admin1").address
   admin2 = sp.test_account("admin2").address
-  admin3 = sp.test_account("admin3").address
-  admin4 = sp.test_account("admin4").address
   pepe = sp.test_account("pepe").address
   
   scenario = sp.test_scenario("TestChangeMintPrice", main)
   init_params = sp.record(
     admin1 = admin1,
     admin2 = admin2,
-    admin3 = admin3,
-    admin4 = admin4
   )
   contract = main.SmartContract(init_params)
   scenario += contract
@@ -237,23 +209,19 @@ def changeMintPrice():
 
   contract.changeMintPrice(sp.tez(10), _sender = admin1)
 
-  contract.changeMintPrice(sp.tez(20), _sender = admin3)
+  contract.changeMintPrice(sp.tez(20), _sender = admin2)
 
 @sp.add_test()
 def changeMinTransferPrice():
 
   admin1 = sp.test_account("admin1").address
   admin2 = sp.test_account("admin2").address
-  admin3 = sp.test_account("admin3").address
-  admin4 = sp.test_account("admin4").address
   pepe = sp.test_account("pepe").address
   
   scenario = sp.test_scenario("TestChangeMinTransferPrice", main)
   init_params = sp.record(
     admin1 = admin1,
     admin2 = admin2,
-    admin3 = admin3,
-    admin4 = admin4
   )
   contract = main.SmartContract(init_params)
   scenario += contract
@@ -267,16 +235,12 @@ def changeRequestFee():
 
   admin1 = sp.test_account("admin1").address
   admin2 = sp.test_account("admin2").address
-  admin3 = sp.test_account("admin3").address
-  admin4 = sp.test_account("admin4").address
   pepe = sp.test_account("pepe").address
   
   scenario = sp.test_scenario("TestChangeRequestFee", main)
   init_params = sp.record(
     admin1 = admin1,
     admin2 = admin2,
-    admin3 = admin3,
-    admin4 = admin4
   )
   contract = main.SmartContract(init_params)
   scenario += contract
@@ -290,16 +254,12 @@ def changeSplit():
 
   admin1 = sp.test_account("admin1").address
   admin2 = sp.test_account("admin2").address
-  admin3 = sp.test_account("admin3").address
-  admin4 = sp.test_account("admin4").address
   pepe = sp.test_account("pepe").address
   
   scenario = sp.test_scenario("TestChangeSplit", main)
   init_params = sp.record(
     admin1 = admin1,
     admin2 = admin2,
-    admin3 = admin3,
-    admin4 = admin4
   )
   contract = main.SmartContract(init_params)
   scenario += contract
@@ -313,16 +273,12 @@ def mint():
 
   admin1 = sp.test_account("admin1").address
   admin2 = sp.test_account("admin2").address
-  admin3 = sp.test_account("admin3").address
-  admin4 = sp.test_account("admin4").address
   pepe = sp.test_account("pepe").address  
     
   scenario = sp.test_scenario("TestMint", main)
   init_params = sp.record(
     admin1 = admin1,
     admin2 = admin2,
-    admin3 = admin3,
-    admin4 = admin4
   )
   contract = main.SmartContract(init_params)
   scenario += contract
@@ -362,8 +318,6 @@ def changeTransferPrice():
 
   admin1 = sp.test_account("admin1").address
   admin2 = sp.test_account("admin2").address
-  admin3 = sp.test_account("admin3").address
-  admin4 = sp.test_account("admin4").address
   pepe = sp.test_account("pepe").address  
   pepa = sp.test_account("pepa").address
     
@@ -371,8 +325,6 @@ def changeTransferPrice():
   init_params = sp.record(
     admin1 = admin1,
     admin2 = admin2,
-    admin3 = admin3,
-    admin4 = admin4
   )
   contract = main.SmartContract(init_params)
   scenario += contract
@@ -406,8 +358,6 @@ def update():
 
   admin1 = sp.test_account("admin1").address
   admin2 = sp.test_account("admin2").address
-  admin3 = sp.test_account("admin3").address
-  admin4 = sp.test_account("admin4").address
   pepe = sp.test_account("pepe").address
   pepa = sp.test_account("pepa").address 
     
@@ -415,8 +365,6 @@ def update():
   init_params = sp.record(
     admin1 = admin1,
     admin2 = admin2,
-    admin3 = admin3,
-    admin4 = admin4
   )
   contract = main.SmartContract(init_params)
   scenario += contract
@@ -462,8 +410,6 @@ def requestClearTransfer():
 
   admin1 = sp.test_account("admin1").address
   admin2 = sp.test_account("admin2").address
-  admin3 = sp.test_account("admin3").address
-  admin4 = sp.test_account("admin4").address
   pepe = sp.test_account("pepe").address
   pepa = sp.test_account("pepa").address
   pepi = sp.test_account("pepi").address
@@ -472,8 +418,6 @@ def requestClearTransfer():
   init_params = sp.record(
     admin1 = admin1,
     admin2 = admin2,
-    admin3 = admin3,
-    admin4 = admin4
   )
   contract = main.SmartContract(init_params)
   scenario += contract
@@ -515,8 +459,6 @@ def transferSVL():
 
   admin1 = sp.test_account("admin1").address
   admin2 = sp.test_account("admin2").address
-  admin3 = sp.test_account("admin3").address
-  admin4 = sp.test_account("admin4").address 
   pepe = sp.test_account("pepe").address
   pepa = sp.test_account("pepa").address
   pepi = sp.test_account("pepi").address
@@ -526,8 +468,6 @@ def transferSVL():
   init_params = sp.record(
     admin1 = admin1,
     admin2 = admin2,
-    admin3 = admin3,
-    admin4 = admin4
   )
   contract = main.SmartContract(init_params)
   scenario += contract
