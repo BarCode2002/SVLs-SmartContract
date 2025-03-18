@@ -1,18 +1,31 @@
+Comment...
+ h1: Test change request fee
 Creating contract KT1TezoooozzSmartPyzzSTATiCzzzwwBFA1
  -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {}))))))
-file TestChangeRequestFee/step_001_cont_0_storage.tz
-file TestChangeRequestFee/step_001_cont_0_storage.json
-file TestChangeRequestFee/step_001_cont_0_storage.py
-file TestChangeRequestFee/step_001_cont_0_types.py
-file TestChangeRequestFee/step_001_cont_0_contract.tz contract SmartContract
-file TestChangeRequestFee/step_001_cont_0_contract.json contract SmartContract
-file TestChangeRequestFee/step_002_cont_0_params.py
-file TestChangeRequestFee/step_002_cont_0_params.tz
-file TestChangeRequestFee/step_002_cont_0_params.json
+file TestChangeRequestFee/step_002_cont_0_storage.tz
+file TestChangeRequestFee/step_002_cont_0_storage.json
+file TestChangeRequestFee/step_002_cont_0_storage.py
+file TestChangeRequestFee/step_002_cont_0_types.py
+file TestChangeRequestFee/step_002_cont_0_contract.tz contract SmartContract
+file TestChangeRequestFee/step_002_cont_0_contract.json contract SmartContract
+Comment...
+ p: Fails because sender is not an admin
+file TestChangeRequestFee/step_004_cont_0_params.py
+file TestChangeRequestFee/step_004_cont_0_params.tz
+file TestChangeRequestFee/step_004_cont_0_params.json
 Executing changeRequestFee(sp.tez(2))...
 Expected error: '0'
-file TestChangeRequestFee/step_003_cont_0_params.py
-file TestChangeRequestFee/step_003_cont_0_params.tz
-file TestChangeRequestFee/step_003_cont_0_params.json
+Comment...
+ p: Passes because sender is an admin
+file TestChangeRequestFee/step_006_cont_0_params.py
+file TestChangeRequestFee/step_006_cont_0_params.tz
+file TestChangeRequestFee/step_006_cont_0_params.json
 Executing changeRequestFee(sp.tez(2))...
  -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 2000000 (Pair 50 {}))))))
+Comment...
+ p: Passes because sender is an admin
+file TestChangeRequestFee/step_008_cont_0_params.py
+file TestChangeRequestFee/step_008_cont_0_params.tz
+file TestChangeRequestFee/step_008_cont_0_params.json
+Executing changeRequestFee(sp.tez(0))...
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 0 (Pair 50 {}))))))

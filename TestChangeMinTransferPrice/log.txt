@@ -1,18 +1,31 @@
+Comment...
+ h1: Test change minimun transfer price
 Creating contract KT1TezoooozzSmartPyzzSTATiCzzzwwBFA1
  -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {}))))))
-file TestChangeMinTransferPrice/step_001_cont_0_storage.tz
-file TestChangeMinTransferPrice/step_001_cont_0_storage.json
-file TestChangeMinTransferPrice/step_001_cont_0_storage.py
-file TestChangeMinTransferPrice/step_001_cont_0_types.py
-file TestChangeMinTransferPrice/step_001_cont_0_contract.tz contract SmartContract
-file TestChangeMinTransferPrice/step_001_cont_0_contract.json contract SmartContract
-file TestChangeMinTransferPrice/step_002_cont_0_params.py
-file TestChangeMinTransferPrice/step_002_cont_0_params.tz
-file TestChangeMinTransferPrice/step_002_cont_0_params.json
+file TestChangeMinTransferPrice/step_002_cont_0_storage.tz
+file TestChangeMinTransferPrice/step_002_cont_0_storage.json
+file TestChangeMinTransferPrice/step_002_cont_0_storage.py
+file TestChangeMinTransferPrice/step_002_cont_0_types.py
+file TestChangeMinTransferPrice/step_002_cont_0_contract.tz contract SmartContract
+file TestChangeMinTransferPrice/step_002_cont_0_contract.json contract SmartContract
+Comment...
+ p: Fails because sender is not an admin
+file TestChangeMinTransferPrice/step_004_cont_0_params.py
+file TestChangeMinTransferPrice/step_004_cont_0_params.tz
+file TestChangeMinTransferPrice/step_004_cont_0_params.json
 Executing changeMinTransferPrice(sp.tez(2))...
 Expected error: '0'
-file TestChangeMinTransferPrice/step_003_cont_0_params.py
-file TestChangeMinTransferPrice/step_003_cont_0_params.tz
-file TestChangeMinTransferPrice/step_003_cont_0_params.json
+Comment...
+ p: Passes because sender is an admin
+file TestChangeMinTransferPrice/step_006_cont_0_params.py
+file TestChangeMinTransferPrice/step_006_cont_0_params.tz
+file TestChangeMinTransferPrice/step_006_cont_0_params.json
 Executing changeMinTransferPrice(sp.tez(20))...
  -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 20000000 (Pair 10000000 (Pair 1000000 (Pair 50 {}))))))
+Comment...
+ p: Passes because sender is an admin
+file TestChangeMinTransferPrice/step_008_cont_0_params.py
+file TestChangeMinTransferPrice/step_008_cont_0_params.tz
+file TestChangeMinTransferPrice/step_008_cont_0_params.json
+Executing changeMinTransferPrice(sp.tez(24))...
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 24000000 (Pair 10000000 (Pair 1000000 (Pair 50 {}))))))

@@ -1,1 +1,1 @@
-sp.record(curr_owner_info = ['l', 'cafetera'], svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')
+'2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX'
