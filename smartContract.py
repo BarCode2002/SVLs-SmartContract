@@ -173,6 +173,8 @@ def changeAdmins():
   pepe = sp.test_account("pepe").address
   
   scenario = sp.test_scenario("TestChangeAdmins", main)
+  scenario.h1("Test change admins")
+  scenario.p("Houfwgr")
   init_params = sp.record(
     admin1 = admin1,
     admin2 = admin2,
@@ -198,6 +200,7 @@ def changeMintPrice():
   pepe = sp.test_account("pepe").address
   
   scenario = sp.test_scenario("TestChangeMintPrice", main)
+  scenario.h1("Test change mint price")
   init_params = sp.record(
     admin1 = admin1,
     admin2 = admin2,
@@ -219,6 +222,7 @@ def changeMinTransferPrice():
   pepe = sp.test_account("pepe").address
   
   scenario = sp.test_scenario("TestChangeMinTransferPrice", main)
+  scenario.h1("Test change minimun transfer price")
   init_params = sp.record(
     admin1 = admin1,
     admin2 = admin2,
@@ -238,6 +242,7 @@ def changeRequestFee():
   pepe = sp.test_account("pepe").address
   
   scenario = sp.test_scenario("TestChangeRequestFee", main)
+  scenario.h1("Test change request fee")
   init_params = sp.record(
     admin1 = admin1,
     admin2 = admin2,
@@ -257,6 +262,7 @@ def changeSplit():
   pepe = sp.test_account("pepe").address
   
   scenario = sp.test_scenario("TestChangeSplit", main)
+  scenario.h1("Test change split")
   init_params = sp.record(
     admin1 = admin1,
     admin2 = admin2,
@@ -276,6 +282,7 @@ def mint():
   pepe = sp.test_account("pepe").address  
     
   scenario = sp.test_scenario("TestMint", main)
+  scenario.h1("Test mint")
   init_params = sp.record(
     admin1 = admin1,
     admin2 = admin2,
@@ -321,7 +328,8 @@ def changeTransferPrice():
   pepe = sp.test_account("pepe").address  
   pepa = sp.test_account("pepa").address
     
-  scenario = sp.test_scenario("TestMint", main)
+  scenario = sp.test_scenario("TestChangeTransferPrice", main)
+  scenario.h1("Test change transfer price")
   init_params = sp.record(
     admin1 = admin1,
     admin2 = admin2,
@@ -362,6 +370,7 @@ def update():
   pepa = sp.test_account("pepa").address 
     
   scenario = sp.test_scenario("TestUpdate", main)
+  scenario.h1("Test update")
   init_params = sp.record(
     admin1 = admin1,
     admin2 = admin2,
@@ -415,6 +424,7 @@ def requestClearTransfer():
   pepi = sp.test_account("pepi").address
     
   scenario = sp.test_scenario("TestRequestClearTransfer", main)
+  scenario.h1("Test request/clear transfer")
   init_params = sp.record(
     admin1 = admin1,
     admin2 = admin2,
@@ -465,6 +475,7 @@ def transferSVL():
   pepo = sp.test_account("pepo").address
 
   scenario = sp.test_scenario("TestTransfer", main)
+  scenario.h1("Test transfer")
   init_params = sp.record(
     admin1 = admin1,
     admin2 = admin2,
