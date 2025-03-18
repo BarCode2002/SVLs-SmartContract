@@ -1,0 +1,38 @@
+Comment...
+ h1: Test change transfer price
+Creating contract KT1TezoooozzSmartPyzzSTATiCzzzwwBFA1
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {}))))))
+file TestChangeTransferPrice/step_002_cont_0_storage.tz
+file TestChangeTransferPrice/step_002_cont_0_storage.json
+file TestChangeTransferPrice/step_002_cont_0_storage.py
+file TestChangeTransferPrice/step_002_cont_0_types.py
+file TestChangeTransferPrice/step_002_cont_0_contract.tz contract SmartContract
+file TestChangeTransferPrice/step_002_cont_0_contract.json contract SmartContract
+file TestChangeTransferPrice/step_003_cont_0_params.py
+file TestChangeTransferPrice/step_003_cont_0_params.tz
+file TestChangeTransferPrice/step_003_cont_0_params.json
+Executing mint(sp.record(curr_owner_info = ['a', 'b'], svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX'))...
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair False (Pair {"a"; "b"} (Pair True (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {""})} (Pair 10000000 "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28"))))))}))))))
+  + Transfer
+     params: ()
+     amount: sp.tez(5)
+     to:     sp.contract(sp.unit, sp.address('tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP')).open_some()
+  + Transfer
+     params: ()
+     amount: sp.tez(5)
+     to:     sp.contract(sp.unit, sp.address('tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT')).open_some()
+file TestChangeTransferPrice/step_004_cont_0_params.py
+file TestChangeTransferPrice/step_004_cont_0_params.tz
+file TestChangeTransferPrice/step_004_cont_0_params.json
+Executing changeTransferPrice(sp.record(price = sp.tez(5), svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX'))...
+Expected error: '3'
+file TestChangeTransferPrice/step_005_cont_0_params.py
+file TestChangeTransferPrice/step_005_cont_0_params.tz
+file TestChangeTransferPrice/step_005_cont_0_params.json
+Executing changeTransferPrice(sp.record(price = sp.tez(5), svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX'))...
+Expected error: '1'
+file TestChangeTransferPrice/step_006_cont_0_params.py
+file TestChangeTransferPrice/step_006_cont_0_params.tz
+file TestChangeTransferPrice/step_006_cont_0_params.json
+Executing changeTransferPrice(sp.record(price = sp.tez(15), svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX'))...
+ -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {Elt "2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX" (Pair False (Pair {"a"; "b"} (Pair True (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" (Pair {Pair "1970-01-01T00:00:00Z" (Pair "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28" {""})} (Pair 15000000 "tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28"))))))}))))))

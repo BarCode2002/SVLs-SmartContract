@@ -1,33 +1,37 @@
+Comment...
+ h1: Test change admins
+Comment...
+ p: Houfwgr
 Creating contract KT1TezoooozzSmartPyzzSTATiCzzzwwBFA1
  -> (Pair "tz1edhNSiBfAcXGs3QXfmgZyrTfNW15rxKNP" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {}))))))
-file TestChangeAdmins/step_001_cont_0_storage.tz
-file TestChangeAdmins/step_001_cont_0_storage.json
-file TestChangeAdmins/step_001_cont_0_storage.py
-file TestChangeAdmins/step_001_cont_0_types.py
-file TestChangeAdmins/step_001_cont_0_contract.tz contract SmartContract
-file TestChangeAdmins/step_001_cont_0_contract.json contract SmartContract
-file TestChangeAdmins/step_002_cont_0_params.py
-file TestChangeAdmins/step_002_cont_0_params.tz
-file TestChangeAdmins/step_002_cont_0_params.json
-Executing changeAdmin1(sp.address('tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28'))...
-Expected error: '0'
-file TestChangeAdmins/step_003_cont_0_params.py
-file TestChangeAdmins/step_003_cont_0_params.tz
-file TestChangeAdmins/step_003_cont_0_params.json
-Executing changeAdmin1(sp.address('tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28'))...
-Expected error: '0'
+file TestChangeAdmins/step_003_cont_0_storage.tz
+file TestChangeAdmins/step_003_cont_0_storage.json
+file TestChangeAdmins/step_003_cont_0_storage.py
+file TestChangeAdmins/step_003_cont_0_types.py
+file TestChangeAdmins/step_003_cont_0_contract.tz contract SmartContract
+file TestChangeAdmins/step_003_cont_0_contract.json contract SmartContract
 file TestChangeAdmins/step_004_cont_0_params.py
 file TestChangeAdmins/step_004_cont_0_params.tz
 file TestChangeAdmins/step_004_cont_0_params.json
-Executing changeAdmin1(sp.address('tz1cAofJKwLSGC5XCNKKRrbhC1MHGrx3Twna'))...
+Executing changeAdmin1(sp.address('tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28'))...
 Expected error: '0'
 file TestChangeAdmins/step_005_cont_0_params.py
 file TestChangeAdmins/step_005_cont_0_params.tz
 file TestChangeAdmins/step_005_cont_0_params.json
-Executing changeAdmin1(sp.address('tz1cAofJKwLSGC5XCNKKRrbhC1MHGrx3Twna'))...
- -> (Pair "tz1cAofJKwLSGC5XCNKKRrbhC1MHGrx3Twna" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {}))))))
+Executing changeAdmin1(sp.address('tz1QgbZeoK6iSxS8hhGhRHeaMebGuyfWLY28'))...
+Expected error: '0'
 file TestChangeAdmins/step_006_cont_0_params.py
 file TestChangeAdmins/step_006_cont_0_params.tz
 file TestChangeAdmins/step_006_cont_0_params.json
+Executing changeAdmin1(sp.address('tz1cAofJKwLSGC5XCNKKRrbhC1MHGrx3Twna'))...
+Expected error: '0'
+file TestChangeAdmins/step_007_cont_0_params.py
+file TestChangeAdmins/step_007_cont_0_params.tz
+file TestChangeAdmins/step_007_cont_0_params.json
+Executing changeAdmin1(sp.address('tz1cAofJKwLSGC5XCNKKRrbhC1MHGrx3Twna'))...
+ -> (Pair "tz1cAofJKwLSGC5XCNKKRrbhC1MHGrx3Twna" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {}))))))
+file TestChangeAdmins/step_008_cont_0_params.py
+file TestChangeAdmins/step_008_cont_0_params.tz
+file TestChangeAdmins/step_008_cont_0_params.json
 Executing changeAdmin1(sp.address('tz1UwzjuSUAJ1FAy6wBdZ3LjiEjCA6ByKZYh'))...
  -> (Pair "tz1UwzjuSUAJ1FAy6wBdZ3LjiEjCA6ByKZYh" (Pair "tz1L56d6bidEZte597cReSK18Ni3V9EZYTsT" (Pair 10000000 (Pair 10000000 (Pair 1000000 (Pair 50 {}))))))

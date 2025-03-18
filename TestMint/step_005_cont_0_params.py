@@ -1,1 +1,1 @@
-sp.record(price = sp.tez(15), svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MATJiw3UsgKkH9vrwX')
+sp.record(curr_owner_info = ['a', 'b'], svl_key = '2021-12-31T23:59:59Ztz1iRXmfLXK5wWVok4MfdsfATJiw3UsgKkH9vrwX')

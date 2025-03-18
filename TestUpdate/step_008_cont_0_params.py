@@ -1,0 +1,1 @@
+sp.record(curr_owner_info = ['a', 'c'], svl_key = 'no key')
